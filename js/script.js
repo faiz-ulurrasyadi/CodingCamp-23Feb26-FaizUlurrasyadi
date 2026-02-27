@@ -15,7 +15,7 @@ contactForm.addEventListener('submit', e => e.preventDefault());
 submitBtn.addEventListener('click', () => {
     const gender = document.querySelector('label[for="jenis-kelamin"] input[type="radio"]:checked');
     resultForm.innerHTML = `
-    <p class="text-white"><strong>Current Date:</strong> ${new Date().toLocaleDateString()}</p>
+    <p class="text-white"><strong>Current Time:</strong> ${new Date()}</p>
     <br/>
     <p class="text-white"><strong>Name:</strong> ${nameInput.value}</p>
     <p class="text-white"><strong>Born Date:</strong> ${bornDateInput.value}</p>
