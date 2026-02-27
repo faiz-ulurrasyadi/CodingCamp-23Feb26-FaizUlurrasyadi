@@ -1,10 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="css/style.css"  rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <header>
+        <div class="logo text-white font-bold text-1xl">FAIZ</div>
+        <nav>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#messageme">Message Me</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="welcome-box">
+                <h1 id="welcome-title" class="font-bold">Hi</h1>
+                <h1 id="welcome-name" class="font-bold">I'm Faiz Ulurrasyadi</h1>
+                <h2 id="welcome-role" class="font-bold">Robotics Engineer</h2>
+                <p id="welcome-desc">Robotics-focused mechanical engineer with hands-on experience in designing, 
+prototyping, and integrating mechanical systems for robotic platforms. Familiar with basic electronics and embedded systems, including sensor wiring, 
+microcontroller integration, and software development using C++, Python, and 
+ROS2 for control and data acquisition in robotics. </p>
+            </div>
+            <div class="home-p"></div>
+        </section>
+        <section id="about">    
+            <h2 class="font-bold pt-15" id="about-title">About Me</h2>
+            <img src="asset/about2.png" alt="About Me Image" class="about-image"/>
+             <div id="about-experience">
+                <div id="about-education">
+                    <h3 class="font-bold text-white mb-4">Education</h3>
+                    <ul class="list-disc marker:text-blue-500 pl-4 marker:text-3xl">
+                        <li>
+                            <p id="edu-year" class="text-blue-400">2019 - 2021</p>
+                            <p id="degree" class="text-white font-bold">Master Degree - Electrical Engineering</p>
+                            <div id="project" class="text-white">
+                                <ul class="list-disc marker:text-blue-500 pl-1 marker:text-sm">
+                                    <li>Create a simulation of humanoid robot learning to walk using rule-based learning on coppeliasim.</li>
+                                    <li>Write and publish a paper with the title “Walking Gait Learning for “T-FLoW” Humanoid Robot Using Rule Based Learning”.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <p id="edu-year" class="text-blue-400">2015 - 2019</p>
+                            <p id="degree" class="text-white font-bold">Bachelor Degree - Mechanical Engineering</p>
+                            <div id="project" class="text-white">
+                                <ul class="list-disc marker:text-blue-500 pl-1 marker:text-sm">
+                                    <li>Create a quadruped robot (design 3D model, manufacture mechanical parts, wiring the electrical components, and create a control program).</li>
+                                    <li>Design the main mechanical structure of a VTOL/drone robot focused on extinguish fire and drop the logistic mission.</li>
+                                    <li>Received Technical Award in the Indonesian Flying Robotic Contest 2018.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="about-working">
+                    <h3 class="font-bold text-white mb-4">Working Experience</h3>
+                    <ul class="list-disc marker:text-blue-500 pl-4 marker:text-3xl">
+                        <li>
+                            <p id="work-year" class="text-blue-400">Jul 2022 - Jun 2025</p>
+                            <p id="position" class="text-white font-bold">Robotics Engineer - Keisuugiken</p>
+                            <div id="work-desc"class="text-white">
+                                <ul class="list-disc marker:text-blue-500 pl-1 marker:text-sm">
+                                    <li>Design and update an AMR robot mechanically to meet with customer requirements using Solidworks. </li>
+                                    <li>Design an attachment for AMR robot to tow three carts (total load weight of 1000 kg) in warehouse. </li>
+                                    <li>Design full-sized humanoid robot for stage performance. </li>
+                                    <li>Create custom inverse kinematics for hexa parallel arm robot as well as simulate it in Coppeliasim. </li>
+                                    <li>Convert ROS1-based robotics system to ROS2 for human following cart-robot. </li>
+                                    <li>Create blender animations to demonstrate many robot functionalities. </li>
+                                    <li>Teach high school students about robotics, build a simple robot, wiring the electrical, and testing. </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <p id="work-year" class="text-blue-400">Oct 2019 - Jun 2023</p>
+                            <p id="position" class="text-white font-bold">Robotics Researcher - RoISC</p>
+                            <div id="work-desc" class="text-white">
+                                <ul class="list-disc marker:text-blue-500 pl-1 marker:text-sm">
+                                    <li>Design full 3D printed humanoid robot (81 cm height), wiring the electrical, and make program for walking motion.</li>
+                                    <li>Write and publish a paper with the title “T-FLoW 4.0 Biped Kinematics Computation Using Pseudoinverse and Orthogonal Rotational Matrix” in IEEE.</li>
+                                    <li>Design adult size bipedal robot with four bar linkages mechanism.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <p id="work-year" class="text-blue-400">Feb 2018 - Apr 2018</p>
+                            <p id="position" class="text-white font-bold">Internship - PT. AeroTerraScan</p>
+                            <div id="work-desc" class="text-white">
+                                <ul class="list-disc marker:text-blue-500 pl-1 marker:text-sm">
+                                    <li >Design a custom V shape octocopter focused on airframe layout, components placement for weight, stability flight and battery efficiency.</li>
+                                    <li>Modified drone hardware with customizable components and performed successful test flights to validate the changes.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 id="project-title" class="pt-15 font-bold mb-10">Projects</h2>
+            <div id="list-project">
+                <div class="project">
+                    <img src="asset/project1.png" alt="quadruped-robot" />
+                    <h3>Quadruped Robot</h3>
+                    <p hidden>This four-legged (quadruped) robot is my first big project. The robot is quite big with length, width and height are 590 x 413 x 377 mm, respectively. I use eight DC motors 24V as actuator with each leg has two motors. I use potentiometer as position sensor and write custom control program with PID control. With Arduino Mega as main controller, I was able to make this robot move (get up from sitting position and trot gait walk) using simple inverse kinematics of 2 DoF for trajectory planning.</p>
+                </div>
+                <div class="project">
+                    <img src='asset/project2.png' alt="humanoid-robot" />
+                    <h3>Humanoid Robot</h3>
+                    <p hidden>This is my main project when I was working under my professor’s laboratory back in 2021. I designed this compact kid-size humanoiod robot using Autodesk Inventor, starting from mechanical design until how all the electrical components are placed. This humanoid robot has height and weight of 85 cm and 9 kg, respectively, uses PLA and PETG 3D print as its main material. It has 30 degrees of freedom to support its movement using Dynamixel Servos. This humanoid robot was using Jetson Nano as its main controller with ubuntu and ROS 1 for operating system and framework. I use inverse kinematics with pseudoinverse method and orthogonal rotational matrix for motion planning. Here is the video of <a class="text-blue-600" href="https://youtube.com/shorts/UGow9568UP4" target="_blank">my humanoid robot walking</a>. </p>
+                </div>
+                <div class="project">
+                    <img src="asset/project3.png" alt="simulation-robot" />
+                    <h3>Simulation of humanoid robot learning to walk</h3>
+                    <p hidden>Still related to humanoid robot, but instead of get in touch with real robot, this time it is done in virtual world. By using CoppeliaSim, I was able to train a simple humanoid robot to walk. I use primitive shape (cube, sphere, cylinder) for humanoid robot model to reduce the computanional cost. In the beginning, the agent or humanoid robot doesn’t know exactly how to walk properly, then by applying my algorithm of RuleBased Learning, the robot could walk further as it learns more. Here is the video of the <a href="https://www.youtube.com/watch?v=PPOuNfVgGlM" target="_blank" class="text-blue-600">agent or humanoid robot training</a> and here is the result <a href="https://www.youtube.com/watch?v=WDD0fsgNHXM" target="_blank" class="text-blue-600">after training</a>. I also did an update to learning parameter by adding the walking direction. This time the robot was able to walk in straight line.</p>
+                </div>
+                <div class="project">
+                    <img src="asset/project4.png" alt="attachment-AMR-robot" />
+                    <h3>An attachment for AMR robot</h3>
+                    <p hidden>This is an attachment for AMR robot to tow three trollies or carts in the warehouse. This attachment was made and built by mostly standard part we can find in a mechanical shop without needing any custom manufacturing plate, makes it cheap in term of cost. It has a feature to lock all three carts at the same time by pressing a trigger and release all at once by pressing another trigger. This attachment was able to tow for a total of 1000 kg of load (tested). I also did an upgrade for this attachment by adding a mechanism to automatically lock or hooked when the cart was pushed to this attachment and also adding the release trigger to be controlled by an actuator like motor.</p>
+                </div>
+                <div class="project">
+                    <img src="asset/project5.jpg" alt="AMR-robot" />
+                    <h3>Arm Robot</h3>
+                    <p hidden>This project needs me to do re-engineering an AMR robot, then modifying its internal structure such as changing the motor, gear ratio, adding some new electronical parts, design a new bumper structure, etc. All these changing sometimes will make an old mechanical structure doesn’t compatible anymore. That's where my job as a designer comes in, to design partial improvements by considering several things, such as the availability of parts in stores, the cost for improvements, the ease of maintenance, etc.</p>
+                </div>
+                <div class="project">
+                    <img src="asset/project6.png" alt="human-following-cart-robot" />
+                    <h3>Human following cart robot</h3>
+                    <p hidden>This robot has the main purpose of carrying luggage at the airport, helping with food service in restaurants, and other things that do not require a heavy load. It uses Raspberry Pi 5 as mini pc, a camera to detect a human, and also a lidar for obstacle detector. In this robot, the newest ROS 2 is used to integrate all sensors, actuators and control system. There are three modes in this robot, idle, manual, and human following. Idle means the robot will stop or do nothing, manual means we can control the robot using a remote control, human following means the robot will follow a detected human in front of it. The robot also has feature to stop immediately when a person or object suddenly detected in human following mode. This function added as a replacement of a bumper sensor, for safety. You can see the demonstration of this robot by clicking this <a href="https://youtube.com/shorts/WY8llvDKBrA?si=BGpYkhXL9I82EQqG" class="text-blue-600" target="_blank">link</a>. I also had the chance to teach high schoolers on how to build this robot.</p>
+                </div>
+            </div>
+            <div id="project-desc" hidden>
+                <div id="project-desc-container">
+                    <h3 class="font-bold mb-14">Human following cart robot</h3>
+                    <img src="asset/project6.png"/>
+                    <p>This robot has the main purpose of carrying luggage at the airport, helping with food service in restaurants, and other things that do not require a heavy load. It uses Raspberry Pi 5 as mini pc, a camera to detect a human, and also a lidar for obstacle detector. In this robot, the newest ROS 2 is used to integrate all sensors, actuators and control system. There are three modes in this robot, idle, manual, and human following. Idle means the robot will stop or do nothing, manual means we can control the robot using a remote control, human following means the robot will follow a detected human in front of it. The robot also has feature to stop immediately when a person or object suddenly detected in human following mode. This function added as a replacement of a bumper sensor, for safety. You can see the demonstration of this robot by clicking this <a href="https://youtube.com/shorts/WY8llvDKBrA?si=BGpYkhXL9I82EQqG" class="text-blue-600" target="_blank">link</a>. I also had the chance to teach high schoolers on how to build this robot.</p>
+                </div>
+            </div>
+        </section>
+        <section id="messageme">
+            <h2 class="font-bold">Message Me</h2>
+            <div id="messageme-container">
+                <form id="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="born-date">Tanggal Lahir:</label>
+                    <input type="date" id="born-date" name="born-date" required>
+                    
+                    <label for="jenis-kelamin" name="jenis-kelamin">Jenis Kelamin:<br>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki" required />
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required />
+                        <label for="perempuan">Perempuan</label>
+                    </label>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button id="submit-btn" type="submit">Send</button>
+                </form>
+                <div id="result-form"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

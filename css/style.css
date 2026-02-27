@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(8, 27, 41);
+}
+/* .logo{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #333;
+    background-image: url('../asset/profile.jpg');
+    background-size: cover;
+} */
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#home{
+    display: flex;
+    height: 576px;
+    width: 100%;
+    background-color: rgba(8, 27, 41);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box{
+    color:white;
+    width: 600px;
+    padding: 20px;
+}
+#welcome-title{
+    font-size: 26px;
+}
+#welcome-name{
+    font-size: 36px;
+}
+#welcome-role{
+    font-size: 24px;
+    color: rgb(13, 147, 236);
+    margin-bottom: 20px;
+}
+#welcome-desc{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.home-p{
+    width: 500px;
+    height: 500px;
+    background-image: url('../asset/home-p2.png');
+    background-size: cover;
+}
+
+@media (max-width: 1110px){
+    #home{
+        height:400px;
+    }
+    .welcome-box{
+        width: 300px;
+        padding: 20px;
+    }
+    .home-p{
+        width: 200px;
+        height: 200px;
+    }
+    #welcome-title{
+        font-size: 20px;
+    }
+    #welcome-name{
+        font-size: 20px;
+    }
+    #welcome-role{
+        font-size: 15px;
+        color: rgb(13, 147, 236);
+        margin-bottom: 10px;
+    }
+    #welcome-desc{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+#about{
+    height: auto;
+    background-color: rgb(18, 46, 67);
+}
+#about-title{
+    color: white;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+#about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+#about-experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#about-education{
+    width: 50%;
+    padding: 25px;
+}
+#about-education h3{
+    display: block;
+    font-size: 22px;
+}
+#about-education ul{
+    background-color: rgb(18, 46, 67);
+}
+#about-working{
+    width: 50%;
+    padding: 20px;
+}
+#about-working h3{
+    display: block;
+    font-size: 22px;
+}
+/*--------------------------------------------------------------*/
+#projects{
+    background-color: rgb(8, 27, 41);
+    color: white;
+}
+#projects h2{
+    font-size: 29px;
+    text-align: center;
+}
+#list-project{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 20px;
+}
+#list-project .project{
+    display: grid;
+    justify-items: center;
+    background-color: rgb(18, 46, 67);
+    padding: 20px;
+    border-radius: 15px;
+}
+#list-project img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+#project-desc{
+    position: fixed;
+    inset: 0;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    color: black;
+}
+#project-desc-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+#project-desc-container h3{
+    width: 100%;
+    text-align: center;
+}
+#project-desc-container p{
+    width: 60%;
+    margin-left: 20px;
+}
+#project-desc img{
+    width: 35%;
+}
+@media (max-width: 1110px){
+    #list-project{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    #project-desc{
+        width: 600px;
+        height: 400px;
+    }
+    #project-desc img{
+        width: 35%;
+        height: 150px
+    }
+    #project-desc-container p{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
+
+#messageme-container{
+    display: flex;
+    justify-content: center;
+}
+#messageme{
+    background-color: rgb(18, 46, 67);
+    color: white;
+    padding: 20px 0;
+}
+#messageme h2{
+    font-size: 29px;
+    text-align: center;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+form button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(13, 147, 236);
+    border-radius: 5px;
+    color: white;
+}
+#result-form{
+    width: 40%;
+    height: 440px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
