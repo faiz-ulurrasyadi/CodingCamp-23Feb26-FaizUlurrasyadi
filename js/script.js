@@ -8,6 +8,9 @@ const projectDesc = document.getElementById('project-desc');
 const projectDescContainer = document.getElementById('project-desc-container');
 const contactForm = document.getElementById('contact-form');
 const projects = document.querySelectorAll('#list-project .project');
+const userCallname = document.getElementById('user-callname');
+const nameModal = document.getElementById('nameModal');
+const welcomeTitle = document.getElementById('welcome-title');
 
 contactForm.addEventListener('submit', e => e.preventDefault());
 submitBtn.addEventListener('click', () => {
@@ -35,3 +38,10 @@ projects.forEach(project => {
 projectDescContainer.addEventListener('click', () => {
     projectDesc.hidden = true;
 })
+
+userCallname.addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    welcomeTitle.textContent += `${userCallname.value}`;
+    nameModal.hidden = true;
+  }
+});
