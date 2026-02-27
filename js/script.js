@@ -1,6 +1,5 @@
 const nameInput = document.getElementById('name');
 const bornDateInput = document.getElementById('born-date');
-const jenisKelaminInputs = document.getElementsByName('jenis-kelamin');
 const messageInput = document.getElementById('message');
 const resultForm = document.getElementById('result-form');
 const submitBtn = document.getElementById('submit-btn');
@@ -14,12 +13,13 @@ const welcomeTitle = document.getElementById('welcome-title');
 
 contactForm.addEventListener('submit', e => e.preventDefault());
 submitBtn.addEventListener('click', () => {
+    const gender = document.querySelector('label[for="jenis-kelamin"] input[type="radio"]:checked');
     resultForm.innerHTML = `
     <p class="text-white"><strong>Current Date:</strong> ${new Date().toLocaleDateString()}</p>
     <br/>
     <p class="text-white"><strong>Name:</strong> ${nameInput.value}</p>
     <p class="text-white"><strong>Born Date:</strong> ${bornDateInput.value}</p>
-    <p class="text-white"><strong>Jenis Kelamin:</strong> ${jenisKelaminInputs.value}</p>
+    <p class="text-white"><strong>Jenis Kelamin:</strong> ${gender.value}</p>
     <p class="text-white"><strong>Message:</strong> ${messageInput.value}</p>`;
 }) 
 
